@@ -1,15 +1,11 @@
 import React from 'react'
 import '../../components/reset.css'
+const $ = require('jquery')
 
 export default class ScreenHome extends React.Component {
   constructor () {
     super()
-
-
-
   }
-
-  
 
   render () {
     return (
