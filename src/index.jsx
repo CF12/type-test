@@ -1,10 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-class App extends React.Component {
-  render () {
-    return <p> Hello World! </p>
-  }
-}
+import SceneHome from './scenes/Home/index.jsx'
 
-render(<App />, document.getElementById('app'))
+render(<SceneHome />, document.getElementById('app'))

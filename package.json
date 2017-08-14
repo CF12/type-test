@@ -23,10 +23,13 @@
     "babel-preset-react": "^6.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
     "webpack": "^3.5.4"
   },
   "devDependencies": {
+    "css-loader": "^0.28.4",
     "standard": "^10.0.3",
+    "style-loader": "^0.18.2",
     "webpack-dev-server": "^2.7.1"
   }
 }
