@@ -1,7 +1,9 @@
 import React from 'react'
 import '../../components/reset.css'
+import keydown from 'react-keydown'
 const $ = require('jquery')
 
+@keydown
 export default class ScreenHome extends React.Component {
   constructor () {
     super()
