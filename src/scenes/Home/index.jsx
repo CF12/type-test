@@ -8,17 +8,15 @@ export default class ScreenHome extends React.Component {
 
   }
 
-  handleKeyDown (event) {
-    console.log(event.key)
-  }
-
-  componentWillMount () {
-    
+  componentWillReceiveProps ({ keydown }) {
+    if (keydown.event) {
+      console.log(keydown.event.key)
+    }
   }
 
   render () {
     return (
-      <div onKeyPressCapture={this.handleKeyDown}>
+      <div>
         <div style={{position: 'relative', width: '100%', height: '100%', backgroundColor: 'cyan'}}>
           <p style={{position: 'absolute', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>testing</p>
         </div>
