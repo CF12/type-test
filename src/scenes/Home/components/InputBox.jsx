@@ -23,7 +23,8 @@ export default class InputBox extends React.Component {
             backgroundColor: 'rgba(0, 0, 0, 0)',
             border: 'none',
             outline: 'none' }}
-          onKeyPress={this.handlerKeyDown} />
+          onKeyPress={this.handlerKeyDown}
+        />
       </div>
     )
   }
