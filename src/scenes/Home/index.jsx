@@ -1,6 +1,11 @@
 import React from 'react'
 import '../../components/reset.css'
 import keydown from 'react-keydown'
+import { createStore } from 'redux'
+import InputBox from './components/InputBox.jsx'
+import WordDisplay from './components/WordDisplay.jsx'
+
+import gstyles from '../../components/gstyles.jsx'
 const $ = require('jquery')
 
 @keydown
@@ -15,7 +20,7 @@ export default class ScreenHome extends React.Component {
 
   componentWillReceiveProps ({ keydown }) {
     if (keydown.event) {
-      this.setState({current_key: keydown.event.key})
+      // this.setState({current_key: keydown.event.key})
     }
   }
 
@@ -23,7 +28,10 @@ export default class ScreenHome extends React.Component {
     return (
       <div>
         <div style={{position: 'relative', width: '100%', height: '100%', backgroundColor: 'cyan'}}>
-          <p style={{position: 'absolute', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{this.state.current_key}</p>
+          <div style={Object.assign(gstyles.flex_center_center, {flexDirection: 'column'})}>
+            <WordDisplay />
+            <InputBox />
+          </div>
         </div>
       </div>
     )
