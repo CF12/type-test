@@ -38,11 +38,11 @@ export default class WordDisplay extends React.Component {
         justifyContent: 'space-between',
         fontSize: '48px'
       }}>
-        <p>{words[0]}</p>
-        <p>{words[0]}</p>
-        <p>{words[0]}</p>
-        <p>{words[1]}</p>
-        <p>{words[2]}</p>
+        <p>{this.state.past_words[0]}</p>
+        <p>{this.state.past_words[1]}</p>
+        <p>{this.state.pending_words[0]}</p>
+        <p>{this.state.pending_words[1]}</p>
+        <p>{this.state.pending_words[2]}</p>
       </div>
     )
   }

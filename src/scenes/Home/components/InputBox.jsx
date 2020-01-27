@@ -9,7 +9,13 @@ export default class InputBox extends React.Component {
   }
 
   handlerKeyDown (event) {
-    console.log(event.key)
+    if (event.keyCode === 32) {
+      // if (this.inputBox.value === this.state.)
+    }
+  }
+
+  clearInputBox () {
+    this.inputBox.value = ''
   }
 
   render () {
@@ -17,13 +23,15 @@ export default class InputBox extends React.Component {
       <div>
         <input
           style={{
-            width: '100%',
+            left: '50%',
+            width: '50%',
             height: '90px',
             fontSize: '90px',
             backgroundColor: 'rgba(0, 0, 0, 0)',
             border: 'none',
             outline: 'none' }}
           onKeyPress={this.handlerKeyDown}
+          ref={(instance) => { this.inputBox = instance }}
         />
       </div>
     )

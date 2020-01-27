@@ -11,10 +11,6 @@ const $ = require('jquery')
 export default class ScreenHome extends React.Component {
   constructor () {
     super()
-
-    this.state = {
-      current_key: ''
-    }
   }
 
   render () {
